@@ -1,5 +1,5 @@
 """
-Arquivo: main.py
+##### Arquivo: main.py
 Propósito: Este é o ponto de entrada para o projeto de análise de dados do dataset 'Adult'. 
 Ele organiza a execução dos scripts que carregam, processam, treinam e avaliam modelos de classificação.
 
@@ -16,8 +16,12 @@ Dependências externas:
 Execução:
 $ python3 main.py
 """
+
+
+
 """
-Arquivo: data_loader.py
+
+##### Arquivo: data_loader.py
 Propósito: Gerenciar o carregamento, limpeza e balanceamento do dataset 'Adult'.
 
 Funcionalidades principais:
@@ -32,7 +36,8 @@ Este script é chamado por 'main.py'.
 """
 
 """
-Arquivo: model_trainer.py
+
+##### Arquivo: model_trainer.py
 Propósito: Treinar e avaliar modelos de classificação no dataset processado.
 
 Funcionalidades principais:
@@ -48,7 +53,8 @@ Dependências:
 Este script é chamado por 'main.py' e requer os dados balanceados gerados por 'data_loader.py'.
 """
 """
-Arquivo: visualization.py
+
+#####  Arquivo: visualization.py
 Propósito: Gerar gráficos comparativos de desempenho entre os modelos de classificação.
 
 Funcionalidades principais:
