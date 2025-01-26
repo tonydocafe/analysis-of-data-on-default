@@ -73,6 +73,7 @@ Este script é chamado por 'main.py' para apresentar os resultados de forma visu
 SAIDA
 
 Resumo:
+
 O dataset possui 32.561 registros e 15 colunas.
 Algumas colunas têm valores ausentes, como workclass (1.836 valores ausentes), occupation (1.843) e native-country (583).
 Tipos de dados:
@@ -80,11 +81,16 @@ int64 (6 colunas): Valores numéricos inteiros.
 object (9 colunas): Valores categóricos ou strings.
 Tamanho em memória: 3.7 MB.
 
-Resumo: Três colunas têm valores ausentes:
+Resumo:
+
+Três colunas têm valores ausentes:
 workclass: 1.836 valores ausentes.
 occupation: 1.843 valores ausentes.
 native-country: 583 valores ausentes.
-Ação recomendada: Decida como lidar com esses valores:
+
+Ação recomendada: 
+
+Decida como lidar com esses valores:
 Preenchimento (e.g., com a moda ou média).
 Remoção de linhas com valores ausentes.
 
@@ -94,15 +100,20 @@ Isso melhora o desempenho dos modelos em datasets originalmente desbalanceados.
 
 
 Desempenho do Modelo:
+
 Acurácia Geral: 90%.
 Métricas para cada classe:
 precision (Precisão): Proporção de predições corretas para cada classe.
 recall (Revocação): Proporção de exemplos positivos que o modelo conseguiu identificar.
 f1-score: Combinação harmônica de precision e recall.
+
 Resumo:
+
 Classe 0 (income <=50K): Boa precisão e revocação (90%).
 Classe 1 (income >50K): Resultados semelhantes (89-90%).
+
 Suporte:
+
 Quantidade de amostras de teste para cada classe (0: 4.542, 1: 4.520).
 
 
