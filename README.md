@@ -54,7 +54,7 @@ O coração deste projeto está no arquivo `main.py`, que organiza a execução 
 
 - Exibição interativa dos gráficos usando matplotlib e seaborn.
 
-Resumo dos Dados 📊
+### Resumo dos Dados 📊
 Registros: 32.561
 
 Colunas: 15
@@ -77,12 +77,12 @@ Memória:
 
 Tamanho: 3.7 MB
 
-Ação Recomendadas 🛠️
+### Ação Recomendadas 🛠️
 Valores Ausentes: Decida como tratar esses dados, seja preenchendo com a moda ou média ou removendo as linhas.
 
 Balanceamento de Classes: O dataset foi balanceado usando técnicas como SMOTE, garantindo que as classes "income <=50K" e "income >50K" tenham o mesmo número de registros.
 
-Desempenho do Modelo 💪
+### Desempenho do Modelo 💪
 Acurácia Geral: 90%
 
 Métricas por Classe:
@@ -91,7 +91,7 @@ Classe 0 (income <=50K): Precisa de 90% de precisão e recall.
 
 Classe 1 (income >50K): Resultados semelhantes, com precisão e recall de 89-90%.
 
-Dependências 📦
+### Dependências 📦
 Certifique-se de ter as dependências necessárias instaladas:
 
 pandas
