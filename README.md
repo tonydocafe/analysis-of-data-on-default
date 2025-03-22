@@ -36,11 +36,11 @@ O coração deste projeto está no arquivo `main.py`, que organiza a execução 
 
 - Treina três modelos:
 
-  - Regressão Logística
+  - Perceptron
 
   - Árvore de Decisão
 
-  - XGBoost
+  - Redes Neurais
 
 - Exibe métricas de desempenho (precisão, recall e f1-score) para cada modelo.
 
