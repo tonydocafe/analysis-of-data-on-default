@@ -90,33 +90,33 @@ O coração deste projeto está no arquivo `main.py`, que organiza a execução 
 - Tamanho: 3.7 MB
 
 ### Ação Recomendadas 🛠️
-Valores Ausentes: Decida como tratar esses dados, seja preenchendo com a moda ou média ou removendo as linhas.
+**Valores Ausentes:** Decida como tratar esses dados, seja preenchendo com a moda ou média ou removendo as linhas.
 
-Balanceamento de Classes: O dataset foi balanceado usando técnicas como SMOTE, garantindo que as classes "income <=50K" e "income >50K" tenham o mesmo número de registros.
+**Balanceamento de Classes:** O dataset foi balanceado usando técnicas como SMOTE, garantindo que as classes "income <=50K" e "income >50K" tenham o mesmo número de registros.
 
 ### Desempenho do Modelo 💪
-Acurácia Geral: 90%
+**Acurácia Geral:** 90%
 
-Métricas por Classe:
+**Métricas por Classe:**
 
-Classe 0 (income <=50K): Precisa de 90% de precisão e recall.
+**Classe 0 (income <=50K):** Precisa de 90% de precisão e recall.
 
-Classe 1 (income >50K): Resultados semelhantes, com precisão e recall de 89-90%.
+**Classe 1 (income >50K):** Resultados semelhantes, com precisão e recall de 89-90%.
 
 ### Dependências 📦
 Certifique-se de ter as dependências necessárias instaladas:
 
-pandas
+- pandas
 
-scikit-learn
+- scikit-learn
 
-xgboost
+- xgboost
 
-matplotlib
+- matplotlib
 
-seaborn
+- seaborn
 
-imbalanced-learn
+- imbalanced-learn
 
 
 
