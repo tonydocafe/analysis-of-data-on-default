@@ -16,14 +16,11 @@ O coração deste projeto está no arquivo `main.py`, que organiza a execução 
   - `visualization.py`: Gera gráficos de comparação de desempenho.
 - Coordena as etapas do pipeline de dados e modelos.
 
-**Como rodar**:
-```bash
-$ python3 main.py
-
 ### Arquivo: data_loader.py
 **Propósito** Gerencia o carregamento, limpeza e balanceamento do dataset "Adult".
 
-Funcionalidades principais:
+
+**Funcionalidades principais**:
 
 Carrega o arquivo de dados (adult.data) e remove valores ausentes.
 
@@ -34,7 +31,8 @@ Aplica o algoritmo SMOTE para balancear as classes (repare que, no dataset origi
 ### Arquivo: model_trainer.py
 Propósito: Treina e avalia modelos de classificação no dataset processado.
 
-Funcionalidades principais:
+
+**Funcionalidades principais**::
 
 Treina três modelos:
 
@@ -49,7 +47,8 @@ Exibe métricas de desempenho (precisão, recall e f1-score) para cada modelo.
 ### Arquivo: visualization.py
 Propósito: Gera gráficos comparativos de desempenho entre os modelos de classificação.
 
-Funcionalidades principais:
+
+**Funcionalidades principais**:
 
 Criação de gráficos de barras comparando a acurácia de cada modelo.
 
@@ -106,3 +105,6 @@ matplotlib
 seaborn
 
 imbalanced-learn
+
+
+
