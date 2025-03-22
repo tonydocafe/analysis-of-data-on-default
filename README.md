@@ -55,27 +55,39 @@ O coração deste projeto está no arquivo `main.py`, que organiza a execução 
 - Exibição interativa dos gráficos usando matplotlib e seaborn.
 
 ### Resumo dos Dados 📊
-Registros: 32.561
+**Registros:**
+-  32.561
 
-Colunas: 15
 
-Valores Ausentes: Algumas colunas têm valores ausentes:
+**Colunas:** 
+- 15
 
-workclass: 1.836 valores ausentes.
 
-occupation: 1.843 valores ausentes.
+**Valores Ausentes:** Algumas colunas têm valores ausentes:
 
-native-country: 583 valores ausentes.
 
-Tipos de Dados:
+- workclass: 1.836 valores ausentes.
 
-Numéricos (int64): 6 colunas
 
-Categóricos (object): 9 colunas
+- occupation: 1.843 valores ausentes.
 
-Memória:
 
-Tamanho: 3.7 MB
+- native-country: 583 valores ausentes.
+
+
+**Tipos de Dados:**
+
+
+- Numéricos (int64): 6 colunas
+
+
+- Categóricos (object): 9 colunas
+
+
+**Memória:**
+
+
+- Tamanho: 3.7 MB
 
 ### Ação Recomendadas 🛠️
 Valores Ausentes: Decida como tratar esses dados, seja preenchendo com a moda ou média ou removendo as linhas.
