@@ -118,5 +118,7 @@ Certifique-se de ter as dependências necessárias instaladas:
 
 - imbalanced-learn
 
-
+**Como rodar**:
+```bash
+$ python3 main.py
 
