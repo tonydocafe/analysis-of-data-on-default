@@ -22,37 +22,37 @@ O coração deste projeto está no arquivo `main.py`, que organiza a execução 
 
 **Funcionalidades principais**:
 
-Carrega o arquivo de dados (adult.data) e remove valores ausentes.
+- Carrega o arquivo de dados (adult.data) e remove valores ausentes.
 
-Converte variáveis categóricas em valores numéricos com LabelEncoder.
+- Converte variáveis categóricas em valores numéricos com LabelEncoder.
 
-Aplica o algoritmo SMOTE para balancear as classes (repare que, no dataset original, temos um desbalanceamento entre as classes).
+- Aplica o algoritmo SMOTE para balancear as classes (repare que, no dataset original, temos um desbalanceamento entre as classes).
 
 ### Arquivo: model_trainer.py
-Propósito: Treina e avalia modelos de classificação no dataset processado.
+**Propósito** Treina e avalia modelos de classificação no dataset processado.
 
 
 **Funcionalidades principais**::
 
-Treina três modelos:
+- Treina três modelos:
 
-Regressão Logística
+  - Regressão Logística
 
-Árvore de Decisão
+  - Árvore de Decisão
 
-XGBoost
+  - XGBoost
 
-Exibe métricas de desempenho (precisão, recall e f1-score) para cada modelo.
+- Exibe métricas de desempenho (precisão, recall e f1-score) para cada modelo.
 
 ### Arquivo: visualization.py
-Propósito: Gera gráficos comparativos de desempenho entre os modelos de classificação.
+**Propósito**: Gera gráficos comparativos de desempenho entre os modelos de classificação.
 
 
 **Funcionalidades principais**:
 
-Criação de gráficos de barras comparando a acurácia de cada modelo.
+- Criação de gráficos de barras comparando a acurácia de cada modelo.
 
-Exibição interativa dos gráficos usando matplotlib e seaborn.
+- Exibição interativa dos gráficos usando matplotlib e seaborn.
 
 Resumo dos Dados 📊
 Registros: 32.561
