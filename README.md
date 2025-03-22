@@ -1,110 +1,97 @@
-# Análise de Dados com o Dataset "Adult" 🚀
+# Data Analysis with the "Adult" Dataset 🚀
 
-Bem-vindo ao projeto de análise de dados do dataset "Adult"! Este repositório é o ponto de partida para explorar, processar e avaliar modelos de classificação sobre dados de renda, visando prever se uma pessoa ganha mais ou menos que 50K com base em diversas características.
+Welcome to the data analysis project for the "Adult" dataset! This repository is the starting point for exploring, processing, and evaluating classification models on income data, revolving around predicting whether a person earns more or less than 50K based on several characteristics.
 
-## Estrutura do Projeto 🎯
+##Project Structure 🎯
 
-O coração deste projeto está no arquivo `main.py`, que organiza a execução do pipeline de dados e modelos. Aqui está o que cada script faz:
+The heart of this project is the `main.py` file, which organizes the execution of the data and model pipeline. Here's what each script does:
 
-### Arquivo: `main.py`
-**Propósito**: Este é o ponto de entrada para o projeto de análise de dados. Ele coordena a execução dos scripts auxiliares e garante que tudo funcione em harmonia.
+### File: `main.py`
+**Purpose**: This is the entry point for the data analysis project. It coordinates the execution of auxiliary scripts and ensures that everything works in harmony.
 
-**Funcionalidades principais**:
-- Chama os scripts auxiliares:
-  - `data_loader.py`: Carrega e processa o dataset.
-  - `model_trainer.py`: Treina e avalia os modelos de classificação.
-  - `visualization.py`: Gera gráficos de comparação de desempenho.
-- Coordena as etapas do pipeline de dados e modelos.
+**Main Functionalities**:
+- Calls the auxiliary scripts:
+- `data_loader.py`: Loads and processes the dataset.
+- `model_trainer.py`: Trains and evaluates the classification models.
+- `visualization.py`: Generates performance comparison graphs.
+- Coordinates the steps of the data and model pipeline.
 
-### Arquivo: data_loader.py
-**Propósito** Gerencia o carregamento, limpeza e balanceamento do dataset "Adult".
+### File: data_loader.py
+**Purpose** Manages the loading, cleaning and balancing of the "Adult" dataset.
 
+**Main features**:
 
-**Funcionalidades principais**:
+- Load the data file (adult.data) and remove missing values.
 
-- Carrega o arquivo de dados (adult.data) e remove valores ausentes.
+- Converts categorical variables into numeric values ​​with LabelEncoder.
 
-- Converte variáveis categóricas em valores numéricos com LabelEncoder.
+- Apply the SMOTE algorithm to balance the classes (note that, in the original dataset, we have an imbalance between the classes).
 
-- Aplica o algoritmo SMOTE para balancear as classes (repare que, no dataset original, temos um desbalanceamento entre as classes).
+### File: model_trainer.py
+**Purpose** Trains and evaluates classification models on the processed dataset.
 
-### Arquivo: model_trainer.py
-**Propósito** Treina e avalia modelos de classificação no dataset processado.
+**Main Features**::
 
+- Trains three models:
 
-**Funcionalidades principais**::
+- Perceptron
 
-- Treina três modelos:
+- Decision Tree
 
-  - Perceptron
+- Neural Networks
 
-  - Árvore de Decisão
+- Displays performance metrics (precision, recall, and f1-score) for each model.
 
-  - Redes Neurais
+### File: visualization.py
+**Purpose**: Generates comparative performance graphs between classification models.
 
-- Exibe métricas de desempenho (precisão, recall e f1-score) para cada modelo.
+**Main Features**:
 
-### Arquivo: visualization.py
-**Propósito**: Gera gráficos comparativos de desempenho entre os modelos de classificação.
+- Creates bar charts comparing the accuracy of each model.
 
+- Interactive display of graphs using matplotlib and seaborn.
 
-**Funcionalidades principais**:
+### Data Summary 📊
+**Records:**
+- 32,561
 
-- Criação de gráficos de barras comparando a acurácia de cada modelo.
-
-- Exibição interativa dos gráficos usando matplotlib e seaborn.
-
-### Resumo dos Dados 📊
-**Registros:**
--  32.561
-
-
-**Colunas:** 
+**Columns:**
 - 15
 
+**Missing Values:** Some columns have missing values:
 
-**Valores Ausentes:** Algumas colunas têm valores ausentes:
+- job class: 1,836 missing values.
 
+- occupation: 1,843 missing values.
 
-- workclass: 1.836 valores ausentes.
+- country of origin: 583 missing values.
 
+**Data Types:**
 
-- occupation: 1.843 valores ausentes.
+- Numeric (int64): 6 columns
 
+- Categorical (object): 9 columns
 
-- native-country: 583 valores ausentes.
+**Memory:**
 
+Size: 3.7 MB
 
-**Tipos de Dados:**
+### Recommended Action 🛠️
+**Missing Values:** Decide how to treat this data, either by filling with the mode or mean or by removing the rows.
 
+**Class Balancing:** The dataset was balanced using techniques such as SMOTE, ensuring that the classes "income <=50K" and "income >50K" have the same number of records.
 
-- Numéricos (int64): 6 colunas
+### Model Performance 💪
+**Overall Accuracy:** 90%
 
+**Metrics by Class:**
 
-- Categóricos (object): 9 colunas
+**Class 0 (income <=50K):** Needs 90% precision and recall.
 
+**Class 1 (income >50K):** Similar results, with results and recall of 89-90%.
 
-**Memória:**
-
-
-- Tamanho: 3.7 MB
-
-### Ação Recomendadas 🛠️
-**Valores Ausentes:** Decida como tratar esses dados, seja preenchendo com a moda ou média ou removendo as linhas.
-
-**Balanceamento de Classes:** O dataset foi balanceado usando técnicas como SMOTE, garantindo que as classes "income <=50K" e "income >50K" tenham o mesmo número de registros.
-
-### Desempenho do Modelo 💪
-**Acurácia Geral:** 90%
-
-**Métricas por Classe:**
-
-**Classe 0 (income <=50K):** Precisa de 90% de precisão e recall.
-
-**Classe 1 (income >50K):** Resultados semelhantes, com precisão e recall de 89-90%.
-
-### Dependências 📦
-Certifique-se de ter as dependências necessárias instaladas:
+### Dependencies 📦
+Make sure you have the necessary dependencies installed:
 
 - pandas
 
@@ -118,7 +105,6 @@ Certifique-se de ter as dependências necessárias instaladas:
 
 - imbalanced-learn
 
-**Como rodar**:
+**How ​​to run**:
 ```bash
 $ python3 main.py
-
