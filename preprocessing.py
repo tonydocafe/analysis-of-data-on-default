@@ -2,7 +2,6 @@ from sklearn.preprocessing import LabelEncoder
 from imblearn.over_sampling import SMOTE
 from sklearn.model_selection import train_test_split
 
-
 def preprocess_data(data):
     categorical_columns = ['workclass', 'education', 'marital-status', 
                            'occupation', 'relationship', 'race', 
